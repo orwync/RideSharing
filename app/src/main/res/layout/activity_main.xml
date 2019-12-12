@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainLayout">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="420dp"
+        android:layout_height="240dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#222144">
+
+        <RelativeLayout
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="600px"
+            android:background="#222144">
+
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:src="@drawable/ic_action_name"
+                android:layout_marginTop="50px"
+                android:layout_marginLeft="50px"
+                android:id="@+id/back" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:src="@drawable/ic_more"
+                android:id="@+id/more"
+                android:layout_marginTop="50px"
+                android:layout_marginLeft="950px"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:layout_marginLeft="400px"
+                android:text="My Profile"
+                android:textColor="#fff"
+                android:textSize="25dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/proflePic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="200px"
+                android:layout_marginLeft="50px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textSize="20dp"
+                android:layout_marginTop="200px"
+                android:layout_marginLeft="220px"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="270px"
+                android:layout_marginLeft="220px"
+                android:id="@+id/place"
+                android:textColor="#fff"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RIDES"
+                android:layout_marginTop="400px"
+                android:layout_marginLeft="50px"
+                android:textColor="#858585"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450px"
+                android:layout_marginLeft="50px"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:id="@+id/rides"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FREE RIDES"
+                android:layout_marginTop="400px"
+                android:layout_marginLeft="450px"
+                android:textColor="#858585"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450px"
+                android:layout_marginLeft="450px"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:id="@+id/freerides"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREDITS"
+                android:layout_marginTop="400px"
+                android:layout_marginLeft="850px"
+                android:textColor="#858585"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450px"
+                android:layout_marginLeft="850px"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:id="@+id/credit"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Past trips"
+        android:textColor="#fff"
+        android:layout_marginTop="650px"
+        android:layout_marginLeft="50px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See all"
+        android:textColor="#f55a42"
+        android:layout_marginTop="650px"
+        android:layout_marginLeft="900px"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:id="@+id/recycleview"/>
+
+
+
+
+</RelativeLayout>
